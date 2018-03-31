@@ -14,7 +14,7 @@ https://github.com/chaozhankai/text3/blob/table/app/xianxingbuju.png
 
 表格布局
 
-https://github.com/chaozhankai/text3/blob/table/app/biaogebuju.png
+https://github.com/chaozhankai/AS-product/blob/master/text3/text3/app/biaogebuju.png
 
 相对布局
 
