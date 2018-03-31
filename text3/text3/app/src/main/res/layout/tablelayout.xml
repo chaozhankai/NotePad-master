@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0"
+        android:background="#7c7676"
+        android:layout_margin="2dp"
+        >
+
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/open"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/ctrlo"
+                android:gravity="right"
+                android:textColor="@color/grey" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/save"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/ctrls"
+                android:gravity="right"
+                android:textColor="@color/grey" />
+
+
+
+
+
+        </TableRow>
+
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/saveas"
+                android:textColor="@color/grey" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:background="#000000"
+                android:text="@string/ctrlshifts"
+                android:textColor="@color/grey" />
+
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_marginTop="1dp"
+                android:text="@string/importa"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:gravity="right"
+                android:textColor="@color/grey" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/exporta"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:text="@string/ctrle"
+                android:gravity="right"
+                android:textColor="@color/grey" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_marginTop="1dp"
+                android:text="@string/quit"
+                android:textColor="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_marginTop="1dp"
+                android:text=""
+                android:textColor="@color/grey" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

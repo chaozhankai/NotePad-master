@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">表格布局</string>
+    <string name="t1">One,One</string>
+    <string name="t2">One,Two</string>
+    <string name="t3">One,Three</string>
+    <string name="t4">One,Four</string>
+    <string name="t5">Two,One</string>
+    <string name="t6">Two,Two</string>
+    <string name="t7">Two,Three</string>
+    <string name="t8">Two,Four</string>
+    <string name="t9">Three,One</string>
+    <string name="t10">Thress,Two</string>
+    <string name="t11">Three,Three</string>
+    <string name="t12">Three,Four</string>
+    <string name="t13">Four,One</string>
+    <string name="t14">Four,Two</string>
+    <string name="t15">Four,Three</string>
+    <string name="t16">Four,Four</string>
+    <string name="open">Open……</string>
+    <string name="ctrlo">Ctrl-O</string>
+    <string name="save">Save……</string>
+    <string name="ctrls">Ctrls</string>
+    <string name="saveas">Save&#160;&#160;As……</string>
+    <string name="ctrlshifts">Ctrl-Shift-S</string>
+    <string name="importa">X&#160;&#160;Import</string>
+    <string name="exporta">X&#160;&#160;Export</string>
+    <string name="ctrle">Ctrl-E</string>
+    <string name="quit">Quit</string>
+
+
+</resources>
