@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SimpleAdapter</string>
+    <drawable name="clr_transparent">@android:color/transparent</drawable>
+    <drawable name="clr_normal">#000000</drawable>
+    <drawable name="clr_pressed">#000000</drawable>
+</resources>
