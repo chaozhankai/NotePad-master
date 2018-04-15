@@ -6,39 +6,29 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TableLayout;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
-    TextView show;
-    @Override
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    private Button mDialogBtn;
+    private WifiDialog mDialog;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        show = (TextView) findViewById(R.id.btn) ;
+        mDialogBtn = (Button) findViewById(R.id.show);
+        mDialogBtn.setOnClickListener(this);
     }
-    public void customView(View source){
-    TableLayout login =(TableLayout)getLayoutInflater()
-            .inflate(R.layout.login,null);
-    new AlertDialog.Builder(this)
-            .setTitle("ANDROID")
-            .setView(login)
-            .setPositiveButton("Sign In", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int whitch) {
-
-                }
-            })
-            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialogInterface, int i) {
-                    //此处填写取消登录做的事情，同样啥都没做
-                }
-            })
-            .create()
-            .show();
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.show) {
+            mDialog = new WifiDialog(this);
+            mDialog.show();
+        }
+    }
 }
 
-}
+//http://www.jb51.net/article/123832.htm
+//参考地址
 
 
 

@@ -3,4 +3,7 @@
     <string name="btn1">AlertDialog</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
+    <string name="android_app">ANDROID APP</string>
+    <string name="sign_in">Sign in</string>
+    <string name="cancel">Cancel</string>
 </resources>
