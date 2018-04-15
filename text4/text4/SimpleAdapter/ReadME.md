@@ -111,6 +111,8 @@ if (s1 == s2){
 
 ​	通过点击每一条的次数，来修改背景颜色
 
+这里修改颜方法是自己实现的，没有用现有的函数，写后面得实验也发现这样可能仅仅是修改了颜色但并没有进行选中等，以后再深入学习再修改方法
+
 ```
 Toast.makeText(MainActivity.this,names[position],Toast.LENGTH_SHORT).show();
 ```
