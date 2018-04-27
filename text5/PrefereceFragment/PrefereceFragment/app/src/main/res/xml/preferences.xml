@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<PreferenceCategory android:title="In-line preferences"
+    >
+    大的标题
+    <CheckBoxPreference
+        android:title="CheckBoxPreference"
+        android:summary="This is a checkbox"
+        android:key="myCheckBoxPreference"
+        >
+    </CheckBoxPreference>
+</PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Dialog-based preferences">
+        输入文字
+        <EditTextPreference
+            android:key="myEditTextPreference"
+            android:title="Edit Text Preference"
+            android:summary="An example that uses an edit text preference"
+            >
+        </EditTextPreference>
+        <ListPreference
+            android:key="myListPreference"
+            android:title="List preference"
+            android:summary="An example that uses a list preference"
+            android:entries="@array/list"
+            android:entryValues="@array/list_value"
+            android:defaultValue="@array/list_value2"
+            android:dialogTitle="Choose One"
+            >
+            android:entries 弹出的对话框中，列表显示的文本内容，这里是弹出一个数组
+            android:entryValues 与android:entries相对应的值
+            android:defaultValue 当对应值不存在时的默认值
+            android:dialogTitle 弹出的对话框中的标题
+            要想让程序记住之前选择的状态，必须设置key的值，PreferenceManager可以以其为参数通过 findPreference 获取指定的 preference
+        </ListPreference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Launch preferences">
+        <PreferenceScreen
+            android:key="myScreenPreference"
+            android:title="Screen preference"
+            android:summary="Show another screen of preference"
+            >
+            弹出新的preferenceScreen，这里用目标文件的包名和类名进行关联，包名详见左侧的文件目录
+            <intent
+                android:targetPackage="com.example.administrator.preferecefragment"
+                android:targetClass="com.example.administrator.preferecefragment.MainActivity"
+                />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="Intent preference"
+            android:summary="Launches an Activity from an Intent"
+            >
+            弹出相应的网页
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://greasyfork.org/zh-CN/scripts"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Preference attributes">
+        <CheckBoxPreference
+            android:key="myParentCheckboxPreference"
+            android:title="Parent checkbox preference"
+            android:summary="This is visually a parent">
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="myChildCheckboxPreference"
+            android:dependency="myParentCheckboxPreference"
+            android:title="Child checkbox preference"
+            android:summary="This is visually a child"
+            >
+            android:dependency="myParentCheckboxPreference"通过这个实现父子依赖
+        </CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

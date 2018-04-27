@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    没有用到，之前写的loadHeadersFromResource来用的
+    <header
+        android:title="CheckBoxPreference"
+        android:summary="This is a checkbox"/>
+    <header
+        android:title="Edit Text Preference"
+        android:summary="An example that uses an edit text preference"/>
+    <header
+        android:title="List preference"
+        android:summary="An example that uses a list preference"/>
+</preference-headers>
