@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        jcenter()
+        //google()  // new as of Gradle v4.1 (not to be confused the the Android Gradle plugin below)
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        //compile 'com.android.support:design:47.0.0'
+        //compile fileTree(dir: 'libs',includes: ['*.jar'])
+        //testCompile'junit:junit:4.12'
+        //compile 'com.android.support:design:23.4.0'
+        //compile 'com.android.support:design:27.1.1'
+        //compile 'com.jakewharton:butterknife:7.0.1'
+        //compile 'com.jakewharton:butterknife:7.0.1'
+        //compile"com.android.support:appcompat-v7:${supportLibVersion}"
+        //compile"com.android.support:design:${supportLibVersion}"
+        //compile 'com.android.support:design:27.0.3'
+//        implementation "com.android.support:appcompat-v7:${supportLibVersion}"
+//        implementation "com.android.support:design:${supportLibVersion}"
+//        implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
+//        implementation "com.android.support:percent:${supportLibVersion}"
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
